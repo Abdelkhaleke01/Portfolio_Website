@@ -1,0 +1,30 @@
+* {
+  margin-top: 0%;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  background-color: black;
+  justify-content: center;
+  gap: 90px;
+  border-bottom: 2px solid white;
+  font: italic;
+}
+
+nav {
+  width: 100vw;
+  font-size: 150%;
+  font-style: italic;
+}
+
+body {
+  background-color: black;
+}
+
+.homeh1 {
+  color: wheat;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+}
