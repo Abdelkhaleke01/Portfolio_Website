@@ -1,7 +1,3 @@
-/* =========================
-   GLOBAL STYLES
-========================= */
-
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +10,6 @@ body {
   color: white;
 }
 
-
 /* =========================
    NAVBAR
 ========================= */
@@ -26,12 +21,12 @@ nav {
 
 nav ul {
   display: flex;
-  justify-content: center;  /* ✅ Links perfect in het midden */
+  justify-content: center;
   align-items: center;
   gap: 80px;
   padding: 15px 0;
   list-style: none;
-  border-bottom: 2px solid white; /* ✅ Witte streep terug */
+  border-bottom: 2px solid white;
 }
 
 nav a {
@@ -43,12 +38,11 @@ nav a {
 }
 
 nav a:hover {
-  color: #7b00ff; /* Paars-blauw hover effect */
+  color: #7b00ff;
 }
 
-
 /* =========================
-   HOME PAGINA
+   HOME PAGE
 ========================= */
 
 .home-container {
@@ -88,9 +82,8 @@ nav a:hover {
   color: antiquewhite;
 }
 
-
 /* =========================
-   CONTACT PAGINA
+   CONTACT PAGE
 ========================= */
 
 .contact-container {
@@ -203,15 +196,89 @@ textarea {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.h1about{
-  margin-top: 4%;
+
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-container {
+  padding: 60px;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.h1about {
+  margin-top: 20px;
+}
+
+.h2about {
+  margin-top: 20px;
+  max-width: 900px;
+  line-height: 1.6;
+}
+
+/* Image BELOW text, right aligned */
+.about-image {
+  margin-top: 40px;
+  width: 270px;
+  border-radius: 12px;
+  object-fit: cover;
+  align-self: flex-end;
+}
+
+/* =========================
+   PROJECTS PAGE
+========================= */
+
+.projects-container {
+  padding: 60px;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 28px;
+  margin-bottom: 40px;
+  background: linear-gradient(to right, #003cff, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.projects-wrapper {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  gap: 140px;
+  margin-bottom: 40px;
 }
-.h2about{
-  margin-top: 4%
+
+.project-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
 }
-.homeh2{
+
+.project-image {
+  width: 360px; /* increased size */
+  border-radius: 10px;
+}
+
+.projects-button {
+  display: inline-block;
+  padding: 12px 35px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(to right, #003cff, #c400ff);
+}
+
+/* =========================
+   HOME HEADERS
+========================= */
+
+.homeh2 {
   margin-top: 10%;
   padding-left: 13%;
   display: flex;
@@ -220,16 +287,56 @@ textarea {
   background: linear-gradient(to right, #003cff, #ff00ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
 
+.homeh22 {
+  margin-top: 15%;
+  padding-left: 13%;
+  font-size: xx-large;
 }
-.homeh22{
- margin-top: 15%;
- padding-left: 13%;
- font-size: xx-large;
-}
-.homeh222{
+
+.homeh222 {
   padding-left: 0%;
   background: linear-gradient(to right, #003cff, #ff00ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+/* =========================
+   PROJECT DETAILS PAGE
+========================= */
+
+.details-container {
+  padding: 60px;
+}
+
+.details-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #003cff, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.details-text {
+  max-width: 800px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.details-text h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.details-images-row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.details-images-row img {
+  width: 260px;
+  border-radius: 10px;
+  border: 1px solid #444;
 }

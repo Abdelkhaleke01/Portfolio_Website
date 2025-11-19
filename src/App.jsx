@@ -6,25 +6,33 @@ import NoPage from './Pages/NoPage';
 import Contact from './Pages/Contact.jsx';
 import Projects from './Pages/Project.jsx';
 import ProjectDetails from './Pages/ProjectDetails.jsx';
-import './App.css'
- 
+import './App.css';
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Navigation layout wrapper */}
         <Route path="/" element={<Navigation />}>
+
+          {/* Home page */}
           <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
+
+          {/* Other pages */}
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="projects" element={<Projects />} />
+
+          {/* Project details page */}
+          <Route path="projectdetails" element={<ProjectDetails />} />
+
+          {/* 404 fallback */}
           <Route path="*" element={<NoPage />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/projectsdetails" element={<ProjectDetails />} />
+
         </Route>
       </Routes>
     </BrowserRouter>
   );
 }
- 
+
 export default App;
- 
- 
