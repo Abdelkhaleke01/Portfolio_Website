@@ -1,12 +1,29 @@
-const Home = () => {
-    return (
-        <>
-            <h2 className="homeh1">Abdel</h2>
-            <h2 className="homeh1">Ik doe de opleiding software development op het TCR</h2>
-            <h2 className="homeh1">Buiten school doe ik in mijn vrije tijd boksen en heb ook een bijbaantje</h2>
-        </>
-    );
-}
+import { useState } from "react";
 
+function Home() {
+  const [activeSection, setActiveSection] = useState(null);
+
+  const handleClick = (section) => {
+    setActiveSection(activeSection === section ? null : section);
+  };
+
+  const goToAbout = () => {
+    window.location.href = "/about"; 
+  };
+
+  return (
+    <section>
+      {/* Klikbare naam */}
+      <h2 className="homeh2 cursor-pointer" onClick={goToAbout}>
+        Abdelkhalek El Ouali
+      </h2>
+
+      {/* Software Developer netjes opgebouwd */}
+      <h2 className="homeh22">
+        Software <span className="homeh222">Developer</span>
+      </h2>
+    </section>
+  );
+}
 
 export default Home;

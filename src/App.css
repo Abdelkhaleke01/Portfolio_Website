@@ -1,30 +1,235 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
 * {
-  margin-top: 0%;
-}
-
-ul {
-  display: flex;
-  width: 100%;
-  background-color: black;
-  justify-content: center;
-  gap: 90px;
-  border-bottom: 2px solid white;
-  font: italic;
-}
-
-nav {
-  width: 100vw;
-  font-size: 150%;
-  font-style: italic;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: black;
+  font-family: Arial, sans-serif;
+  color: white;
 }
 
-.homeh1 {
-  color: wheat;
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+  width: 100%;
+  background-color: black;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;  /* ✅ Links perfect in het midden */
+  align-items: center;
+  gap: 80px;
+  padding: 15px 0;
+  list-style: none;
+  border-bottom: 2px solid white; /* ✅ Witte streep terug */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-style: italic;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #7b00ff; /* Paars-blauw hover effect */
+}
+
+
+/* =========================
+   HOME PAGINA
+========================= */
+
+.home-container {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.home-buttons {
   display: flex;
   justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.home-buttons button {
+  background-color: #1f1f1f;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
   font-style: italic;
+  transition: 0.25s;
+}
+
+.home-buttons button:hover {
+  background-color: #333;
+}
+
+.foto-abdel {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.homep {
+  color: antiquewhite;
+}
+
+
+/* =========================
+   CONTACT PAGINA
+========================= */
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  padding: 60px;
+  margin-top: 40px;
+}
+
+.contact-form {
+  background-color: #1b1b1b;
+  padding: 25px;
+  border-radius: 8px;
+  width: 600px;
+  border: 1px solid #444;
+}
+
+.contact-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-style: italic;
+  background: linear-gradient(to right, #003cff, #c400ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+  font-size: 15px;
+  color: white;
+}
+
+input,
+textarea {
+  background-color: #0f0f0f;
+  padding: 10px;
+  border: 1px solid #333;
+  color: white;
+  border-radius: 5px;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+.send-btn {
+  margin-top: 15px;
+  padding: 12px 25px;
+  background-color: #0055ff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  background-color: #0077ff;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  width: 45px;
+  height: 45px;
+}
+
+.cv-btn {
+  width: 180px;
+  height: 180px;
+  background-color: #2d2d2d;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cv-btn a {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  background: linear-gradient(to right, #003cff, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.h1about{
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+}
+.h2about{
+  margin-top: 4%
+}
+.homeh2{
+  margin-top: 10%;
+  padding-left: 13%;
+  display: flex;
+  flex-direction: column;
+  font-size: xx-large;
+  background: linear-gradient(to right, #003cff, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.homeh22{
+ margin-top: 15%;
+ padding-left: 13%;
+ font-size: xx-large;
+}
+.homeh222{
+  padding-left: 0%;
+  background: linear-gradient(to right, #003cff, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
