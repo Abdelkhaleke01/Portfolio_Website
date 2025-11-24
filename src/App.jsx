@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Navigation from './Pages/Navigation';
-import Home from './Pages/Home.jsx';
-import About from './Pages/About';
-import NoPage from './Pages/NoPage';
-import Contact from './Pages/Contact.jsx';
-import Projects from './Pages/Project.jsx';
-import ProjectDetails from './Pages/ProjectDetails.jsx';
+import Navigation from './Components/Pages/Navigation.js';
+import Home from './Components/Pages/Home.js';
+import About from './Components/Pages/About.js';
+import NoPage from './Components/Pages/NoPage.js';
+import Contact from './Components/Pages/Contact.js';
+import Projects from './Components/Pages/Project.jsx';
+import ProjectDetails from './Components/Pages/ProjectDetails.jsx';
 import './App.css';
 
 function App() {

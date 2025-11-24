@@ -13,7 +13,7 @@ function Home() {
 
   return (
     <section>
-      {/* Klikbare naam */}
+      {}
       <h2 className="homeh2 cursor-pointer" onClick={goToAbout}>
         Abdelkhalek El Ouali
       </h2>

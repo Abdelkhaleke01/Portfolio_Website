@@ -279,20 +279,18 @@ textarea {
 ========================= */
 
 .homeh2 {
-  margin-top: 10%;
+  margin-top: 8%;
   padding-left: 13%;
   display: flex;
   flex-direction: column;
-  font-size: xx-large;
-  background: linear-gradient(to right, #003cff, #ff00ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+
 }
 
 .homeh22 {
-  margin-top: 15%;
+  margin-top: 2%;
   padding-left: 13%;
-  font-size: xx-large;
+  font-size: 3rem;
 }
 
 .homeh222 {
